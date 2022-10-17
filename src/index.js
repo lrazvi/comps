@@ -3,8 +3,8 @@ import  ReactDOM  from "react-dom/client";
 import './style.css';
 
 
-console.log('hi');
 //hello
+//console.log('hi');
 
 class Square extends React.Component {
     render() {
