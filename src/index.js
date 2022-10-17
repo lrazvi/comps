@@ -4,6 +4,7 @@ import './style.css';
 
 
 console.log('hi');
+//hello
 
 class Square extends React.Component {
     render() {
