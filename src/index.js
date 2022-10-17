@@ -1,5 +1,10 @@
 import React from "react";
-import  ReactDOM  from "react";
+import  ReactDOM  from "react-dom/client";
+import './style.css';
+
+
+console.log('hi');
+
 class Square extends React.Component {
     render() {
       return (
@@ -76,4 +81,6 @@ class Square extends React.Component {
   
   const root = ReactDOM.createRoot(document.getElementById("root"));
   root.render(<Game />);
+  
+  
   
