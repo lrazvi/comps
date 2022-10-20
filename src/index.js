@@ -1,6 +1,8 @@
 import React from "react";
 import  ReactDOM  from "react-dom/client";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './style.css';
+import Tasks from'./tasks';
 
 
 
@@ -89,13 +91,12 @@ import './style.css';
   function List() {
     return(
       <div id = "container">
-        <link
-          href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700"
-          rel="stylesheet"
-        />
+        
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700"
+          rel="stylesheet"/>
         <header>
           <input  type="text" placeholder="Enter a task..." id="item" />
-          <button id="push">Add</button>
+          <button id="add" >Add</button>
         </header>
         <h2>To Do</h2>
         <ul class="todo" id="todo"></ul>
@@ -147,7 +148,7 @@ import './style.css';
 
     addInput.addEventListener('keypress', function (e) {
       // did the user press *enter*? if yes then continue
-      if (13 === e.keyCode) {
+      if (13 === e.keyCode ) {
         // grab the value of the input tag
         let newItem = document.getElementById('item').value
         // if the input tag is not empty then run our function to add an item
