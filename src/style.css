@@ -49,7 +49,7 @@
     margin-left: 20px;
   }*/
 
-  /* variables */
+ /*
 :root {
   --font-color: #2d3436;
   --body-bg-color: #f7f1e3;
@@ -85,12 +85,13 @@ body {
   border-radius: 5%;
 }
 
+
 h2 {
   margin-bottom: 40px;
   margin-top: 40px;
   display: inline-block;
 }
-/* this one will add the underline that you can see in the screenshot */
+
 h2::after {
   content: '';
   border-bottom: 5px solid black;
@@ -102,7 +103,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
-/* give some simple styling to our `input` tag */
+
 header input {
   min-height: 40px;
   width: 100%;
@@ -116,8 +117,6 @@ header button {
   border: none;
   font-size: 2rem;
 }
-
-
 
 li {
   width: 100%;
@@ -140,7 +139,7 @@ li .buttons button {
   border: none;
   font-size: 2rem;
 }
-/* apply a different style to the completed tasks */
+
 .completed li {
   background-color: var(--done-bg-color);
 }
@@ -151,19 +150,98 @@ li .buttons button {
 svg {
   max-width: 25px;
 }
-/* define the normal color */
+
 svg path {
   fill: var(--svg-normal-color);
 }
-/* change the color when we hover the icons*/
+
 button:hover svg path {
   fill: var(--svg-hover-color);
 }
-/* make the remove icon red*/
+
 .remove svg path {
   fill: var(--svg-remove-color);
 }
-/* make the remove icon a different color on hover */
+
 .remove:hover svg path {
   fill: var(--svg-remove-hover-color);
+
+  font-family: 'Common Pixel', sans-serif;
+}*/
+
+:root {
+  --font-color: #2d3436;
+  --body-bg-color: #f7f1e3;
+  --container-bg-color: #55efc4;
+  --todo-bg-color: #00b894;
+  --done-bg-color: #2ed573;
+  --svg-normal-color: #2d3436;
+  --svg-hover-color: #0984e3;
+  --svg-complete-color: #0984e3;
+  --svg-remove-color: #d63031;
+  --svg-remove-hover-color: #ff4757;
+}
+
+*{
+  
+  margin: auto;  
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+#lists{
+  text-align: center;
+  background-color: pink;
+  
+  font-family: 'VT323';
+                                                
+}
+
+#add{
+  font-family: 'VT323';
+}
+
+
+
+.app {
+  text-align: center;
+}
+
+
+
+.app-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.app-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
